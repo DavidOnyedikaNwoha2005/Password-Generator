@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/tools/index.css">
+
+    <!-- FAVICON LINK -->
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+
+    <!-- FONT-AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Generate <i class="fa-solid fa-lock"></i> <br><span>Random Password</span></h1>
+        <div class="display">
+            <input type="text" placeholder="Password" id="password" readonly>
+
+            <span id="eyeicon" class="eye-open"> <i class="fa-regular fa-eye-slash"></i> </span>
+
+            <img src="/images/copy.png" id="copyPassword">
+
+            <div class="popup" id="popup">
+                <h2>Copied!</h2>
+                <button type="button" id="btn">OK</button>
+            </div>
+        </div>
+
+        <button id="createPassword"><img src="/images/generate.png" alt="generate icon">Generate Password</button>
+
+    </div>
+
+    <script src="/tools/index.js"></script>
+</body>
+
+</html>
